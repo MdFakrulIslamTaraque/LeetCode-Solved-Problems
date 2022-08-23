@@ -21,7 +21,7 @@ public:
         // }
         // return false;
         
-                //--------way-2--------------
+            //--------way-2--------------
         // if(num_size>1)
         // {
         //     sort(nums.begin(),nums.end());
@@ -34,13 +34,14 @@ public:
         // }
         // return false;
         
-                //--------way-3(much faster and easier)--------------
-        set<int> s(nums.begin(),nums.end());
+            //--------way-3(much faster and easier-using unordered set)--
+        unordered_set<int> s(nums.begin(),nums.end());
         int set_size = s.size();
         if(num_size>set_size)
             return true;
         else
             return false;
+        
         
     }
 };
