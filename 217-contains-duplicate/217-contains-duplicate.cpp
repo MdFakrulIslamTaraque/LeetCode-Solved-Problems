@@ -34,8 +34,8 @@ public:
         // }
         // return false;
         
-            //--------way-3(much faster and easier-using unordered set)--
-        unordered_set<int> s(nums.begin(),nums.end());
+            //--------way-3(much faster and easier-using set)--
+        set<int> s(nums.begin(),nums.end());
         int set_size = s.size();
         if(num_size>set_size)
             return true;
