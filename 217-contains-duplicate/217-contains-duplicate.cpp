@@ -35,13 +35,6 @@ public:
         // return false;
         
             //--------way-3(much faster and easier-using set)--
-        set<int> s(nums.begin(),nums.end());
-        int set_size = s.size();
-        if(num_size>set_size)
-            return true;
-        else
-            return false;
-        
-        
+        return num_size > set<int>(nums.begin(),nums.end()).size();
     }
 };
