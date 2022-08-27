@@ -1,7 +1,7 @@
 class Solution {
 public:
     bool canConstruct(string ransomNote, string magazine) {
-        unordered_map<char,int>fr,fm;
+        map<char,int>fr,fm;
         int lr = ransomNote.size(), lm = magazine.size();
         for(int i=0; i<lr; i++) fr[ransomNote[i]]++;
         for(int i=0; i<lm; i++) fm[magazine[i]]++;
